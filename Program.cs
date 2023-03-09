@@ -53,7 +53,11 @@ namespace Products
                SnickerDoodle,
             };
 
-            Console.WriteLine(Twix.Name);
+            Console.WriteLine("____________Baked Goods_____________________");
+            foreach (BakedGood good in bakedGoods)
+            {
+                Console.WriteLine(good.Name);
+            }
         }
     }
 }
