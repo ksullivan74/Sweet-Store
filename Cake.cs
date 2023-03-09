@@ -1,18 +1,17 @@
 namespace Products
 {
-    public class Cake
+    public class Cake : BakedGood
     {
-        public double? Price { get; set; }
 
-        public double? Weight { get; set; }
+        public bool Frozen { get; set; }
 
-        public int? BakingTemperature { get; set; }
+        public bool Frosted { get; set; }
 
-        public bool? Frozen { get; set; }
-
-        public bool? Frosted { get; set; }
-
-        public string? Name { get; set; }
+        public Cake(bool frozenParam, bool frostedParam)
+        {
+            Frozen = frozenParam;
+            Frosted = frostedParam;
+        }
 
         public void Slice()
         {

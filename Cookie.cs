@@ -1,16 +1,13 @@
 namespace Products
 {
-    public class Cookie
+    public class Cookie : BakedGood
     {
-        public double? Price { get; set; }
-
-        public int? BakingTemperature { get; set; }
-
-        public double? Weight { get; set; }
-
-        public string? Name { get; set; }
-
         public bool? Frosted { get; set; }
+
+        public Cookie(bool frostedParam)
+        {
+            Frosted = frostedParam;
+        }
 
         public void Frost()
         {
